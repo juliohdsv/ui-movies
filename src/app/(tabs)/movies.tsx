@@ -23,7 +23,7 @@ export default function Movies(){
       <Text style={styles.title}>FILMES</Text>
       <FlatList
         data={movies}
-        // keyExtractor={ ìtem => String(ìtem.id) }
+        keyExtractor={ ìtem => String(ìtem.id) }
         renderItem={ ({item}) => <List data={item}/> }
       />
     </View>
@@ -32,14 +32,12 @@ export default function Movies(){
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
     backgroundColor: theme.colors.black
   },
   title:{
-    color: theme.colors.white,
+    color: theme.colors.red,
     fontFamily: theme.fontFamily.bold,
     fontSize: 22,
-    margin: 10
-  }
+    padding: 12,
+  },
 }); 
