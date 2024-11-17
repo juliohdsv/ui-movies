@@ -1,11 +1,15 @@
-import { View, Text, StyleSheet } from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 
 import { theme } from '@/theme';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home</Text>
+      <Image 
+        source={require("../../../assets/images/splash.png")}
+        style={styles.image}
+      />
+      <Text style={styles.title}>BEM-VINDO</Text>
     </View>
   );
 }
@@ -19,5 +23,11 @@ const styles = StyleSheet.create({
   },
   title:{
     color: theme.colors.white,
+    fontFamily: theme.fontFamily.bold,
+    fontSize: 18,
+  },
+  image:{
+    width: "100%",
+    height: "30%",
   }
 });
