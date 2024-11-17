@@ -19,9 +19,9 @@
 ![alt text](image-1.png)
 
 > MOVIES SCREEN
-> > <br>
+> <br>
 ![alt text](image.png)
 
 > MODAL (SINOPSE)
-> > <br>
+> <br>
 ![alt text](image-2.png)
